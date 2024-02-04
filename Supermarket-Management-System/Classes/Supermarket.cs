@@ -26,5 +26,16 @@ namespace Supermarket_Management_System.Classes
                 Console.WriteLine(line);
             }
         }
+
+        public void listCustomers()
+        {
+            //paste your local absolute path here
+            string filePath = "C:\\Users\\ILHAN\\source\\repos\\Supermarket-Management-System\\Supermarket-Management-System\\Data\\Customers.txt";
+            List<string> lines = File.ReadAllLines(filePath).ToList();
+            foreach(string line in lines)
+            {
+                Console.WriteLine(line);
+            }
+        }
     }
 }
