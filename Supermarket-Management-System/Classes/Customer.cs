@@ -9,7 +9,20 @@ namespace Supermarket_Management_System.Classes
 {
     public class Customer
     {
-        public double balance = 7;
+        public double balance { get; set; } = 100;
+        public string username;
+        public string password;
+
+        public Customer()
+        {
+        }
+
+        public Customer(string username, string password)
+        {
+            this.username = username;
+            this.password = password;
+        }
+
         public void buyProduct(Product product){
             if (product != null && exists(product) && balance >= product.price)
             {
