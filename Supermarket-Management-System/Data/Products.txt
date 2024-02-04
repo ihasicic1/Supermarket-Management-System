@@ -1,0 +1,6 @@
+asd,12
+adddd,33
+Meso,14.9
+Jaja,7.25
+PC,4000
+Laptop,3000
